@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import{ Route, Link, Switch, Redirect} from 'react-router-dom';
+import { render } from 'react-dom';
+
 import './App.css';
 import axios from "axios";
 
@@ -11,10 +13,10 @@ class App extends Component{
     }
   }
 
-  gethotdog() {
+  getPuppyApiData() {
     axios({
       method: 'GET',
-      url: 'http://www.recipepuppy.com/api/?',
+      url: 'https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?',
       headers: {'Accept': 'application/json'}
     })
 
@@ -28,7 +30,7 @@ class App extends Component{
     })
   }
   componentDidMount(){
-    this.gethotdog()
+    this.getPuppyApiData()
   }
 
   render() {
