@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import dataJson from './recipe.json';
 import { render } from 'react-dom';
