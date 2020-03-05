@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GA-Project2 Recipe App
 
-## Available Scripts
+This application represents use of the technologies and techniques learned during unit 2. I am building a front-end recipe application using React. Recipe Puppy is primarily a search site. I am Inspired by the Taste of Home website:
+https://www.tasteofhome.com/recipes/
 
-In the project directory, you can run:
+Project Description:
+The application should retrieve data from the http://www.recipepuppy.com/ site using its api and render it in a browser.
 
-### `npm start`
+Project Link:
+GitHub- https://github.com/grimmana/GA-Project2-React
+Deployment - 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Wireframe: https://wireframe.cc/S7wxhm - diagram broke. Uploaded a screen shot to my GitHub page: https://github.com/grimmana/GA-Project2-React/blob/master/Screen%20Shot%202020-03-05%20at%2011.30.40%20AM.png  takes a really long time to load.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+MVP:
+1. Find and use external api.
+2. Render data on page
+3. Allow user to interact with the page
 
-### `npm test`
+Post MVP:
+1. Pull additional data
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+				
+Components:
 
-### `npm run build`
+Component			Description
+App				This makes initial data pull
+Header			This will render the header and include the nav
+Footer			This will render the header and include the nav
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Time Frames:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Component		Priority	Estimated 	Time		Actual
+					Time		Invested	Time
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Wireframe		H		8
 
-### `npm run eject`
+Working
+with api		H		8					
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Adding			H		8		
+Form	
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+TOTAL			H		24
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+		
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Additional Libraries:
+GitHub: 
+Recipe Puppy API: (http://www.recipepuppy.com/about/api/?)
+Postman: 
+Axios: 
+React:
+React-Router:
+CORS-addon for Chrome: 
+NodeJS: 
+WireFrame:
+Surge: 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Code Snippet:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Issues and resolutions:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+ERROR: api call error: No �Access-Control-Allow-Origin�
+TEMP SOLUTION FOR DEV: INSTALL https://gadeeresei.slack.com/archives/DSNAXSW3Z/p1583356257000700	 
+RESOLUTION:
+https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+How I built it:
+test
+ 1. Setup a new repository on my Git Hub site.
+ 2. Cloned the repository to my local machine.
+ 3. Setup a separate test folder on my computer to test bringing in the api. Not necessary.
+ 4. ❯ npx create-react-app appname         (appname = the folder to be created)
+ 5. ❯ cd appname
+ 6. ❯ npm start                            (verify the spinning React logo)
+ 7. Browser open in Chrome: View | Developer | Developer Tools
+ 8. 
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+1. Setup a new repository on my Git Hub site.
+2. Cloned the repository to my local machine.
+3. Setup a separate test folder on my computer to test bringing in the api. Not necessary.
+4. ❯ npx create-react-app appname
+5. 
+Installed Axios	
+5. 	 to test the website API using Postman.
+6. 
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Installation instructions: 
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Accomplishments I am proud of:
+
+What I learned:
+
+
+
+
