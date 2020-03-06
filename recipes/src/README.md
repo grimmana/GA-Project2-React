@@ -80,17 +80,26 @@ test
  7. Browser open in Chrome: View | Developer | Developer Tools
  8. 
 
-
-
-app
+Project setup:
 
 1. Setup a new repository on my Git Hub site.
-2. Cloned the repository to my local machine.
-3. Setup a separate test folder on my computer to test bringing in the api. Not necessary.
-4. ❯ npx create-react-app appname
-5. 
-Installed Axios	
-5. 	 to test the website API using Postman.
+2. Clone the repository link https://github.com/grimmana/GA-Project2-React.git to ~ sei/projects/ on the local machine.
+3. From the github folder [GA-Projext2-React]; run the command replacing appname with desired folder name [recipes]
+	- npx 
+	- ❯ npx create-react-app appname
+	- ~ sei/projects/GA-Project2-React/recipes
+4. From the appname folder; run the command to install axios for api calls
+	- npm 
+	- ❯ npm install axios	
+5. From the appname folder; run the command to install the React-Router package
+	- npm 
+	- ❯ npm install react-router react-router-dom
+6. Start the server; 
+	- ❯ npm start
+	- may initially receive a prompt to start Chrome so the Server Web page can be displayed
+	- check the web page for the spinning React logo
+	 to test the website API us
+	 ing Postman.
 6. 
 
 
@@ -100,6 +109,13 @@ Installation instructions:
 Accomplishments I am proud of:
 
 What I learned:
+1. Working with wireframe software. 
+2. Other ways of editing a markdown document
+3. Uploading files to github.
+1. The importance of CORS to the web development process by specifying who and how assets can be accessed. 
+	- Chrome extension that bypasses the error, but only works in development and causes some sites to not render properly or videos to load.
+	- Heroku link
+2. Adjusting the size of an image.
 
 
 
