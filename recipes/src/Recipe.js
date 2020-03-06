@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./App.css";
-import { render } from "react-dom";
 import Yum from './Yum.json';
 
-class indvRecipe extends Component {
+class Recipe extends Component {
     constructor(props) {
         super(props)
     }
     render() {
-        console.log(this.props.siteData);
-        let recipeData = this.props.siteData.map((siteData, index) => {
+        console.log(this.props.puppyApiData);
+        let recipeData = this.props.puppyApiData.map((Yummy, index) => {
             return (
-                <div key={siteData.id}>
-                    <Link to={`/siteData/${siteData.id}`}>{siteData.title}</Link>
-                    {/* <br></br> */}
-                    {/* <img src={data.thumbnail[0].url} width="100" height="100" /> */}
+                <div key={Yummy.id}>
+                    <Link to={`/Yummy/${Yummy.id}`}>{Yummy.title}</Link>
+                    <br></br> 
+                    <img src={Yummy.thumbnail[0].url} width="100" height="100" />
                 </div>
             )
     })
@@ -24,5 +23,4 @@ class indvRecipe extends Component {
         )
     }
 }
-
-export default indvRecipe;
+export default Recipe;
