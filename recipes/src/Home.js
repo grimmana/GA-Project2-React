@@ -1,5 +1,5 @@
 
-import Yum from './Yum.json';
+import dataForYum from './Yum.json';
 import Home from './Home';
 import './App.css';
 import { render } from 'react-dom';

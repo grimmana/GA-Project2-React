@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Yum from './Yum.json';
+import dataForYum from './Yum.json';
 import './App.css';
 
 

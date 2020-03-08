@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./App.css";
-import Yum from './Yum.json';
+import dataForYum from './Yum.json';
 
 class Recipe extends Component {
     constructor(props) {
@@ -9,12 +9,12 @@ class Recipe extends Component {
     }
     render() {
         console.log(this.props.puppyApiData);
-        let recipeData = this.props.puppyApiData.map((Yummy, index) => {
+        let recipeData = this.props.puppyApiData.map((dataForYum, index) => {
             return (
-                <div key={Yummy.id}>
-                    <Link to={`/Yummy/${Yummy.id}`}>{Yummy.title}</Link>
+                <div key={dataForYum.id}>
+                    <Link to={`/Yum/${dataForYum.id}`}>{dataForYum.title}</Link>
                     <br></br> 
-                    <img src={Yummy.thumbnail[0].url} width="100" height="100" />
+                    <img src={dataForYum.thumbnail[0].url} width="100" height="100" />
                 </div>
             )
     })
