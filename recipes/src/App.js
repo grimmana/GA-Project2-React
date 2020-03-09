@@ -4,6 +4,7 @@ import './App.css';
 import Recipe from './Recipe';
 import Search from './Search';
 import Home from './Home';
+import text from './text'
 import axios from "axios";
 
 class App extends Component {
@@ -46,12 +47,12 @@ class App extends Component {
           <Link to='/'> Home</Link>
           <Link to='/Recipe'> Recipe</Link>
           <Link to='/Search'> Search</Link>
-        </nav>
+        </nav> 
         <main>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/Search" exact component={Search} />
-          <Route path="/Recipe/:Recipe" render={routerProps => <Recipe setRecipe={this.setRecipe}{...routerProps}{...this.state} />} />
+          <Route path="/Recipe/:Recipe" render={(routerProps => <Recipe setRecipe={this.setRecipe}{...routerProps}{...this.state} />)} />
           </Switch>
         </main>
       </div>
