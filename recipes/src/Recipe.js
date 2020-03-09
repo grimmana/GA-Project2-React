@@ -8,13 +8,14 @@ class Recipe extends Component {
         let currentRecipe = text.map(item => {
             return (
                 <div className="recipe" key={item.url}>
-                    {/* <p><Link to={"/text/" + item.url}>{item.url}</Link>: {item.title}
-                    </p> */}
+                    <p><Link to={"/text/" + item.title}>{item.title}</Link>: {item.title}
+                    </p> 
                 </div>
             )
+            
         }) 
         
-        return <div>{currentRecipe}</div>;
+        return <div>{currentRecipe} what</div>;
         // let recipeId = this.props.match.params.index
         // let recipe = this.props.yum.filter((yum, index) => {
             // return recipeId === recipe.index
