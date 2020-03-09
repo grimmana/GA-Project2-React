@@ -7,15 +7,19 @@ class Recipe extends Component {
     render() {
         let currentRecipe = text.map(item => {
             return (
-                <div className="recipe" key={item.url}>
-                    <p><Link to={"/text/" + item.title}>{item.title}</Link>: {item.title}
-                    </p> 
+                <div className="recipe" key={item.title}>
+
+                    <p><Link to={"/text/" + item.title}>{item.title}</Link>: {item.title}</p> 
+
+
                 </div>
+
+                
             )
             
         }) 
         
-        return <div>{currentRecipe} what</div>;
+        return <div>{currentRecipe}</div>;
         // let recipeId = this.props.match.params.index
         // let recipe = this.props.yum.filter((yum, index) => {
             // return recipeId === recipe.index
