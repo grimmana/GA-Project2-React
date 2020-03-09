@@ -47,12 +47,12 @@ class App extends Component {
           <Link to='/'> Home</Link>
           <Link to='/Recipe'> Recipe</Link>
           <Link to='/Search'> Search</Link>
-        </nav> 
+        </nav>
         <main>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/Search" exact component={Search} />
-          <Route path="/Recipe/:Recipe" render={(routerProps => <Recipe setRecipe={this.setRecipe}{...routerProps}{...this.state} />)} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/Search" exact component={Search} />
+            <Route path="/Recipe/:Recipe" render={(routerProps => <Recipe setRecipe={this.setRecipe}{...routerProps}{...this.state} />)} />
           </Switch>
         </main>
       </div>
