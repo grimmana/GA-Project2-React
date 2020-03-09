@@ -14,8 +14,11 @@ class Recipe extends Component {
     render() {
         let currentRecipe = text.map(item => {
             return (
-                <div className="text" key={item.url}>
-                    <p><Link to={"src/text/" + item.url}>{item.url}</Link>{item.title}</p>
+                <div className="text" key={item.title}>
+                    <p><Link to={"src/text/" + item.title}></Link>{item.title}</p>
+                   <p><Link> <img src={"src/text/" + item.Thumbnail} width="100" height="100">{item.Thumbnail}</img></Link>{item.Thumbnail}</p>
+                    <p><Link to={"src/text/" + item.Ingredients}>{item.Ingredients}</Link>{item.Ingredients}</p>
+                    <p><Link to={"src/text/" + item.href}>{item.href}</Link></p>
                 </div>
             )
         })

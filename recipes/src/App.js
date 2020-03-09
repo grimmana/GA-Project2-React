@@ -43,6 +43,9 @@ class App extends Component {
   render() {
     return (
       <div>
+          <header className="App-header">
+            <h1 className="App-title">Recipe Finder</h1>
+          </header>    
         <nav>
           <Link to='/'> Home</Link>
           <Link to='/Recipe'> Recipe</Link>
