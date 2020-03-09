@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./App.css";
 import "./Home.css";
+import "./App"
 import text from './text.json';
 import { Router } from 'react-router';
 
