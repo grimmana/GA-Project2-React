@@ -53,7 +53,7 @@ class App extends Component {
         <main>
           <Route path="/" component={Home} />
           <Route path="/Search" component={Search} />
-          <Route path="/src/:text" render={routerProps => <Recipe setRecipe={this.setRecipe} {...routerProps} {...this.state} />}
+          <Route path="/Recipe" render={routerProps => <Recipe setRecipe={this.setRecipe} {...routerProps} {...this.state} />}
           />
           <Switch>
             <Route path="/" exact render={() => <Recipe pup={this.state.pup} />} />
