@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import dataForYum from './Yum.json';
+import text from './text.json';
 import './App.css';
 import { render } from 'react-dom';
 import Recipe from './Recipe';

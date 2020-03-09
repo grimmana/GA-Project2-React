@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import dataForYum from './Yum.json';
 import './App.css';
+import text from './text.json';
+
 
 
 class Search extends Component {
