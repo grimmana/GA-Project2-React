@@ -11,13 +11,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipe: []
+      pup: []
     };
-    this.setRecipe = this.setRecipe.bind(this);
+    this.setPup = this.setPup.bind(this);
   }
 
-  setRecipe(recipe) {
-    this.setState({ recipe: recipe });
+  setPup(pup) {
+    this.setState({ pup: pup });
   }
 
   // getPuppyApiData() {
@@ -49,10 +49,13 @@ class App extends Component {
           <Link to='/Search'> Search</Link>
         </nav>
         <main>
-          <Switch>
+       
             <Route path="/" exact component={Home} />
             <Route path="/Search" exact component={Search} />
-            <Route path="/Recipe/:Recipe" render={(routerProps => <Recipe setRecipe={this.setRecipe}{...routerProps}{...this.state} />)} />
+            <Route path="/Recipe" render={routerProps => <Recipe setRecipe={this.setRecipe}{...routerProps}{...this.state} />} />
+            <Switch>
+            <Route path="/" exact render={() => <Recipe pup={this.state.pup}/> }/>
+            <Route path="/text" exact render={(props) => <Recipe {...props} pup={this.state.pup} /> } />
           </Switch>
         </main>
       </div>

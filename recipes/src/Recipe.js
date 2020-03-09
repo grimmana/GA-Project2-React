@@ -9,24 +9,17 @@ import { Router } from 'react-router';
 class Recipe extends Component {
     constructor(props) {
         super(props);
- 
-        };
+
+    };
     render() {
         let currentRecipe = text.map(item => {
-
             return (
-                <div>
-                    <header className="App-header">
-                        <h1 className="App-title">Recipe Finder</h1>
-                    </header>
-                    <div className="Recipe" key={item.url}>
-                        <p><Link to={"/text/" + item.url}>{item.url}</Link>{item.title}</p>
-                    </div>
+                <div className="text" key={item.url}>
+                    <p><Link to={"src/text/" + item.url}>{item.url}</Link>{item.title}</p>
                 </div>
             )
         })
         return <div>{currentRecipe}</div>;
-
     }
 }
 export default Recipe;
