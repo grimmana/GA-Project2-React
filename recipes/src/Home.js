@@ -1,15 +1,11 @@
-import React, {Component} from 'react';
-import text from './text.json';
+import React, { Component } from 'react';
 import './App.css';
-import { render } from 'react-dom';
-import Recipe from './Recipe';
 
 class Home extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <h1> Exactemente!</h1>
-                <p>Quieres cocinar!</p>
+                <h1>Recipe Finder</h1>
             </div>
         )
     }

@@ -45,7 +45,7 @@ class App extends Component {
       <div>
         <nav>
           <Link to='/'> Home
-              <h1>  Recipe Finder </h1>
+    
           </Link>
           <Link to='/Recipe'> Recipe</Link>
           <Link to='/Search'> Search</Link>
