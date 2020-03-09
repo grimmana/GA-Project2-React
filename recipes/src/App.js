@@ -12,28 +12,33 @@ class App extends Component {
     super(props);
     this.state = { 
       puppyApiData:[]
-    }
+    };
+    this.setPuppyApiData = this.setPuppyApiData.bind(this);
   }
 
-  getPuppyApiData() {
-    axios({
-      method: 'GET',
-      url: 'https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?',
-      headers: { 'Accept': 'application/json' }
-    })
-      .then(response => {
-        console.log(response.data.results);
-        this.setState({
-          PuppyApiData: response.data.results
-        })
-      })
-      .catch(error => {
-        console.log(error);
-      })
+  setPuppyApiData(puppyApiData) {
+    this.setState({ puppyApiData: puppyApiData});
   }
-  componentDidMount() {
-    this.getPuppyApiData()
-  }
+
+  // getPuppyApiData() {
+  //   axios({
+  //     method: 'GET',
+  //     url: 'https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?',
+  //     headers: { 'Accept': 'application/json' }
+  //   })
+  //     .then(response => {
+  //       console.log(response.data.results);
+  //       this.setState({
+  //         PuppyApiData: response.data.results
+  //       })
+  //     })
+  //     .catch(error => {
+  //       console.log(error);
+  //     })
+  // }
+  // componentDidMount() {
+  //   this.getPuppyApiData()
+  // }
 
   render() {
     return (
@@ -44,6 +49,7 @@ class App extends Component {
             <h1>  Recipe Finder </h1>
             </Link>
             <Link to='/Recipe'> Recipe</Link>
+            <br></br>
             <Link to='/Search'> Search</Link>
           </nav>
           </header>
