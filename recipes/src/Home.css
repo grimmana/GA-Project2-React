@@ -9,6 +9,7 @@
     color: white;
   }
   
-  .App-link {
-    color: #61dafb;
+  .Container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
   }
